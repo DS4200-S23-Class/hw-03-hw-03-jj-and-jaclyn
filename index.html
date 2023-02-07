@@ -20,28 +20,34 @@
             </div>
         <!-- add explaination on right column -->
         <div class="column">
+
                 <h3>Marks </h3>
                 <ul>
+                
                     <li>Area</li>
                 </ul>
+                
                 <h3>Channels</h3>
-                <ul>
-                    <li>For visualization1, it used color to control the appearance of marks. In this graph, blue represents Clinton and red represents Trump. Then people can cearly see the vote rate from the graph by those two distinct colors.</li>
+                    <ul>
+                    <li>Color</li>
+                
+                        <ul>
+                        <li>represents the attribute of type categorical. This color attribute represent each state vote for which candidate. Different color represents different candidate.</li>
+                        <li>We think this is a good mapping. For visualization1, it used color to control the appearance of marks. In this graph, blue represents Clinton and red represents Trump. Then people can cearly see the vote rate from the graph by those two distinct colors.</li>
+                     </ul>
                 </ul>
 
-                <ul>
-                    <li>Color</li>
-                </ul>
+                
                 <h3>Color maps </h3>
                 <ul>
-                    <li>Categorical colormap</li>
+                    <li>represents the attribute of type categorical</li>
                     <li>Because it just have two color red and blue to show the Trump or Clinton, just two categories</li>
-                    <li>It is a good choice because those two colorse areperceptually distant, which can allow people to see the difference clearly.
+                    <li>It is a good choice because those two colors are perceptually distant, which can allow people to see the difference clearly.
                 </ul>
             </div>
         </div>
         
-    <!-- add two columns for secondvis -->
+    <!-- add two columns for second vis -->
     <div class="row">
         <!-- add image to left column -->
         <div class="column">
@@ -56,18 +62,25 @@
                 <!-- Channels and reasons -->
                 <h3>Channels</h3>
                 <ul>
-                    <li>Color</li>
+                    <li>Color-categorical , position(Both)-Ordered-Quantitative</li>
+                <ul>
+                <li>It used color to show the scoring values. In this graph, Purple represents scoring value below the average and orange represents scores above the average level.</li>
+            </ul>
+                <li>position(Both)-Ordered-Quantitative</li>
+                <ul>
+                <li>For position(Both), the higher the point on the graph, the higher the angle of the ball. The farther right on the graph, the higher exit velocity. So we think position is a good choice because user can clearly see the trend of each ball. If we want to use other channel to represent, such as the shape, it would be really hard to read.</li>
+            </ul>
                 </ul>
-                <li>For visualization2, it used color to control the scoring values. In this graph, Purple represents scoring value below the average and orange represents scores above the average level.</li>
-                <li>It also have using postion(vertical) to show the different type of ball.</li>
-                <li>It also have using postion(horizontal) to show the existing velocity for each ball.</li>
-
+                
                 <h3>Color maps </h3>
                 <ul>
+
                     <li>Divergent colormap</li>
+                    <ul>
                     <li>Because purple and orange to indicate extrmes of a range to show the scores value of batted balls</li>
-                    <li>It is a good choice because it can show clearly differentiate between each point with “average” 
+                    <li>It is a good choice because it can show clearly differentiate between each point with “average” </li>
                 </ul>
+
             </div>
         </div>
 
@@ -75,31 +88,40 @@
     <div class="row">
         <!-- add image to left column -->
         <div class="column">
-                <!-- add image here -->
+                <a href="https://ibb.co/GsbXCzh"><img src="https://i.ibb.co/mvMmhfx/vis3.png" alt="vis3" border="0"></a>
             </div>
         <!-- add explaination on right column -->
         <div class="column">
+                <h3> Graph</h3>
+                    <li> The graph above is showing all housing violations(from noise complaints to gun violence) that occurred in Boston in 2021. Every plot in the graph represents a row in the civ file, and the location is based on longitude and latitude. The colors represent each neighborhoods in the city.</li>
                 <h3>Marks </h3>
                 <ul>
-                    <li>Area</li>
+                    <li>Points</li>
                 </ul>
                 <h3>Channels</h3>
                 <ul>
-                    <li>Color</li>
+                    <li>Color-Categorical</li>
+                    <li>For the color, it represents the number of violations happend in the different neighborhood in Boston area. Each color represents different neighborhood and each point represent a housing violation happened.</li>
+    
+                     <li> Position(Both)-Ordered-Quantitative</li>
+                     <ul>
+                    <li>For the horizonral, it represents the longtitude of the violation happened.For the vertical, it represents the latitude of the violation happened</li>
+                    <li> We think it is a good choice because when we use position,  Latitude and longtitude can show the trend with the violation. Then we can use it to make the conclusion of the trend that with lower latitude and longtitude, there is less violation.</li>
                 </ul>
                 <h3>Color maps </h3>
                 <ul>
                     <li>Categorical colormap</li>
-                    <li>Because it just have two color red and blue to show the Trump or Clinton, just two categories</li>
-                    <li>It is a good choice because those two colorse areperceptually distant, which can allow people to see the difference clearly.
+                    <li>Because it have really different colors to represent each neighborhood in Boston.</li>
+                    <li>It is a good choice because those colors are perceptually distant, which can allow people to see the difference clearly.
                 </ul>
             </div>
         </div>
 
-    <h3>Acknowledgements</h3>
+    <h2>Acknowledgements</h2>
     <div>
     <p1>
         <ul>
+        <li>https://www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston</li>
         <li>https://imgbb.com/</li>
         <li>https://www.w3schools.com/html/default.asp</li>
         <li>https://www.w3schools.com/css/default.asp</li>
@@ -108,6 +130,14 @@
         </ul>
     </p1>
 </div>
+    <!-- add botton to the webpage-->
+    <h2>Click the botton to modify the page</h2>
+    <div>
+            <button type = "button" onClick="buttonClicked(
+        )">Click me!</button>
+
+    <div id = "button-div" class = "gen">
+        Number of times button clicked: 0
 
 
 <!-- link javaScript file -->
